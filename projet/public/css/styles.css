@@ -1,0 +1,233 @@
+/* variables pour les couleurs */
+:root {
+    --primary-color: #3498db;
+    --danger-color: #e74c3c;
+    --background-color: #f5f6fa;
+    --border-color: #dcdde1;
+    --success-color: #2ecc71;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: #2d3436;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* style du formulaire */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button, .button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    font-size: 14px;
+}
+
+button:hover, .button:hover {
+    background-color: #2980b9;
+}
+
+/* liste des produits */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: var(--danger-color);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* recherche et filtres */
+.search-filter {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.search-filter > div {
+    flex: 1;
+}
+
+/* total et boutons d'action */
+.actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#total_price {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* style pour les messages d'erreur */
+.error-message {
+    background-color: var(--danger-color);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* style pour les messages de succès */
+.success-message {
+    background-color: var(--success-color);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Style pour le panneau utilisateur */
+.user-panel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.welcome-message {
+    margin-right: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.login-btn, .logout-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+}
+
+.login-btn:hover {
+    background-color: #2980b9;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Style pour le message de connexion */
+.login-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Pour la page de connexion */
+.login-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour les champs de formulaire de connexion */
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
